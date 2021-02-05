@@ -12,14 +12,11 @@ namespace MVVM.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
         FriendsListViewModel lvm;
-
         public Friend Friend { get; private set; }
-
         public FriendViewModel()
         {
             Friend = new Friend();
         }
-
         public FriendsListViewModel ListViewModel
         {
             get { return lvm; }
@@ -68,7 +65,6 @@ namespace MVVM.ViewModel
                 }
             }
         }
-
         public bool IsValid
         {
             get
